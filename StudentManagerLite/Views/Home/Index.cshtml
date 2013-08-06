@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "Student Page";
+}
+<div class="loading-indicator" data-bind="visible: loading()">Loading...</div>
+<table class="table table-bordered" data-bind="visible: !loading()">
+    <thead>
+        <tr>
+            <th  style="width:auto;">Name</th>
+            <th  style="width:85px;"></th>
+        </tr>
+    </thead>
+    <tbody data-bind="foreach: Students">
+        <tr data-bind="template: { name: $root.displayMode, data: $data }">
+        </tr>
+    </tbody>
+</table>
+<script type="text/html" id="read-template">
+    <td><span data-bind="text: StudentName, click: $root.edit"></span></td>
+    <td><button class="btn btn-danger" data-bind="click: $root.Remove">DELETE</button> </td>
+</script>
+<script type="text/html" id="edit-template">
+    <td><input type="text" data-bind="value: StudentName, event: { blur: $root.Patch }" /></td>
+    <td></td>
+</script>
+@section scripts{
+    <script src="~/Scripts/knockout-2.3.0.js"></script>
+    <script src="~/Scripts/knockout.mapping-latest.js"></script>
+    <script src="~/App/StudentModel.js"></script>
+@*    <script type="text/javascript">
+        
+    </script>*@
+}
