@@ -17,4 +17,4 @@
 03. Twitter Bootstrap responsive design for UI
 
 04. Running snapshots - Outputs.png
-![Image](https://raw.github.com/zameer/StudentManagerLite/master/Outputs.png)
+![](https://raw.github.com/zameer/StudentManagerLite/master/Outputs.png?raw=true)
