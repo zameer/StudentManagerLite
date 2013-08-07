@@ -1,7 +1,6 @@
-
 <h2>SUMMARY</h2>
 
-<ol>
+<ol style="font-family:verdana;font-size:11px;">
 	<li>GoF design patterns used for seperation of layers [C# libraries]
 		<ul>
 			<li>DataObjects
