@@ -1,23 +1,35 @@
-SUMMARY
 
-01. GoF design patterns used for seperation of layers [C# libraries]
-	> DataObjects 
-	  + POCO with EF used
-	  + Factory, Singleton, Proxy and Mapper design patterns
-	  
-	> BusinessObjects
-	  + Student business object
+<h2>SUMMARY</h2>
 
-02. ASP.Net MVC api controller [StudentManagerLite]
-	> Repository design pattern used [Folder: Models/StudentRepository]
-
-	> StudentsController : ApiController used  [Folder: Controllers/]
-	
-	> View and MVVM library
-	  + Index.cshtml [Folder: Views/Home/]
-	  + StudentModel.js [Folder: App/]
-
-03. Twitter Bootstrap responsive design for UI
-
-04. Running snapshots
+<ol>
+	<li>GoF design patterns used for seperation of layers [C# libraries]
+		<ul>
+			<li>DataObjects
+				<ul>
+					<li>POCO with EF used</li>
+					<li>Factory, Singleton, Proxy and Mapper design patterns</li>
+				</ul>
+			</li>
+			<li>BusinessObjects
+				<ul>
+					<li>Student business object</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li>ASP.Net MVC api controller [StudentManagerLite]
+		<ul>
+			<li>Repository design pattern used [Folder: Models/StudentRepository]</li>
+			<li>StudentsController : ApiController used  [Folder: Controllers/]</li>
+			<li>View and MVVM library
+				<ul>
+					<li>Index.cshtml [Folder: Views/Home/]</li>
+					<li>StudentModel.js [Folder: App/]</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li>Twitter Bootstrap responsive design for UI</li>
+	<li>Running snapshots</li>
+</ol>
 ![](Outputs.png?raw=true)
